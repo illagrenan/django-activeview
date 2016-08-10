@@ -37,6 +37,12 @@ def test_all():
 
 
 @task
+def check():
+    """run tests quickly with the default Python"""
+    run("python setup.py check --verbose --metadata --restructuredtext")
+
+
+@task
 def coverage():
     """check code coverage quickly with the default Python"""
     run("coverage run --source activeview/templatetags test_project/manage.py test")
@@ -56,8 +62,6 @@ def test_install():
 @task
 def build():
     """build package"""
-    run("python setup.py check --verbose --strict --restructuredtext")
-
     run("python setup.py build")
     run("python setup.py sdist")
     run("python setup.py bdist_wheel")
