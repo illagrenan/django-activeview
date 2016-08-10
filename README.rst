@@ -18,6 +18,7 @@ Django Active View: *Highlight active items in menu*
         :target: https://coveralls.io/github/illagrenan/django-activeview?branch=master
         :alt: Coverage
 
+
 .. image:: https://requires.io/github/illagrenan/django-activeview/requirements.svg?branch=master
      :target: https://requires.io/github/illagrenan/django-activeview/requirements/?branch=master
      :alt: Requirements Status
@@ -32,8 +33,6 @@ Installation
 
 - Supported Python versions are: ``2.7``, ``3.3``, ``3.4``, ``3.5`` and ``pypy``.
 - Supported Django versions are: ``1.8.x``, ``1.9.x`` and ``1.10.x``.
-
-**This package is not yet on PyPI.** Install it directly from Github.
 
 .. code:: shell
 
