@@ -39,7 +39,7 @@ def test_all():
 @task
 def check():
     """run tests quickly with the default Python"""
-    run("python setup.py check --verbose --metadata --restructuredtext")
+    run("python setup.py --no-user-cfg --verbose check --metadata --restructuredtext --strict")
 
 
 @task
@@ -70,5 +70,14 @@ def build():
 @task
 def publish():
     """publish package"""
+    check()
     run('python setup.py sdist upload -r pypi')
     run('python setup.py bdist_wheel upload -r pypi')
+
+
+@task
+def publish_test():
+    """publish package"""
+    check()
+    run('python setup.py sdist upload -r https://testpypi.python.org/pypi')
+    run('python setup.py bdist_wheel upload -r https://testpypi.python.org/pypi')

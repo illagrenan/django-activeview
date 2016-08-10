@@ -7,8 +7,8 @@ from setuptools import setup
 
 setup(
     name='django-activeview',
-    version='0.1.0',
-    description="""TODO Add Some Description""",
+    version='0.1.0.1',
+    description="""Django template tag that checks if given view or path is active.""",
     long_description=io.open("README.rst", 'r', encoding="utf-8").read(),
     url='https://github.com/illagrenan/django-activeview',
     license='MIT',
