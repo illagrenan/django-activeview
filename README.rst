@@ -1,6 +1,6 @@
-=====================================================
-Django Active View: *Highhlight active items in menu*
-=====================================================
+====================================================
+Django Active View: *Highlight active items in menu*
+====================================================
 
 .. image:: https://badge.fury.io/py/django_activeview.svg
         :target: https://pypi.python.org/pypi/django_activeview
@@ -55,10 +55,11 @@ Usage
 
 TODO
 
-Inspiration
------------
+Inspiration and Credits
+-----------------------
 
-TODO
+- https://github.com/j4mie/django-activelink
+
 
 License
 -------
