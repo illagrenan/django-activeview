@@ -25,7 +25,7 @@ Django Active View: *Highlight active items in menu*
 Introduction
 ------------
 
-TODO
+Django template tag that checks if given view or path is active.
 
 Installation
 ------------
@@ -56,6 +56,7 @@ Usage
 Template tag ``isactive`` accepts name of url OR path.
 
 .. code:: html+django
+
     {% load activeview %}
 
     {% isactive "/" %}
@@ -68,16 +69,12 @@ Template tag ``isactive`` accepts name of url OR path.
         Url with name "index" is active
     {% endisactive %}
 
-
     Else is supported:
 
     {% isactive "contact_us" %}
         Url with name "contact_us" is active.
-
         {% else %}
-
         "contact_us" is NOT active
-
     {% endisactive %}
 
 
