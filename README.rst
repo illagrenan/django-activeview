@@ -50,6 +50,10 @@ Add ``activeview`` to ``INSTALLED_APPS``:
         # ...
     ]
 
+Usage
+-----
+
+TODO
 
 Inspiration
 -----------
