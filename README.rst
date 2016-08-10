@@ -2,7 +2,7 @@
 Django Active View: *Highhlight active items in menu*
 =====================================================
 
-.. image:: https://badge.fury.io/py/django_make_app.svg
+.. image:: https://badge.fury.io/py/django_activeview.svg
         :target: https://pypi.python.org/pypi/django_activeview
         :alt: PyPi
 
@@ -10,7 +10,7 @@ Django Active View: *Highhlight active items in menu*
         :target: https://pypi.python.org/pypi/django_activeview/
         :alt: MIT
 
-.. image:: https://api.travis-ci.org/illagrenan/django-make-app.svg
+.. image:: https://api.travis-ci.org/illagrenan/django_activeview.svg
         :target: https://travis-ci.org/illagrenan/django-activeview
         :alt: TravisCI
 
@@ -30,13 +30,30 @@ TODO
 Installation
 ------------
 
-Supported Python versions are: ``3.5`` (TODO: Add ``2.x`` support).
+- Supported Python versions are: ``2.7``, ``3.3``, ``3.4``, ``3.5`` and ``pypy``.
+- Supported Django versions are: ``1.8.x``, ``1.9.x`` and ``1.10.x``.
+
+**This package is not yet on PyPI.** Install it directly from Github.
 
 .. code:: shell
 
-    pip install --upgrade django-activeview
+    pip install --upgrade git+git://github.com/illagrenan/django-activeview.git#egg=django-activeview
 
 
+Add ``activeview`` to ``INSTALLED_APPS``:
+
+.. code:: python
+
+    INSTALLED_APPS = [
+        # ...
+        'activeview',
+        # ...
+    ]
+
+Usage
+-----
+
+TODO
 
 Inspiration
 -----------
