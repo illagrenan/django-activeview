@@ -1,0 +1,23 @@
+{% load activeview %}
+
+
+<h1>Hello world</h1>
+
+
+{% isactive "/" %}
+    Root path is active
+{% endisactive %}
+|
+{% isactive "index" %}
+    Index view is active
+{% endisactive %}
+|
+{% isactive "index" a=42 b="foo" c="bar" %}
+    This can never be active
+{% endisactive %}
+|
+{% isactive "index" a=42 b="foo" c="bar" %}
+    This can never be active
+    {% else %}
+    This block is always active
+{% endisactive %}

@@ -1,0 +1,13 @@
+# Requirements required by this package:
+-r requirements_test.txt
+
+# Requirements needed for development & build & testing
+coverage
+coveralls
+wheel
+setuptools
+docutils
+pygments
+tox
+flake8
+invoke==0.12.2
