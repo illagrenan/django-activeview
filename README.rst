@@ -10,7 +10,7 @@ Django Active View: *Highhlight active items in menu*
         :target: https://pypi.python.org/pypi/django_activeview/
         :alt: MIT
 
-.. image:: https://api.travis-ci.org/illagrenan/django_activeview.svg
+.. image:: https://api.travis-ci.org/illagrenan/django-activeview.svg
         :target: https://travis-ci.org/illagrenan/django-activeview
         :alt: TravisCI
 
