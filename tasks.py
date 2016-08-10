@@ -48,7 +48,8 @@ def coverage():
 def test_install():
     """try to install built package"""
     run("pip uninstall django_activeview --yes", warn=True)
-    run("pip install --use-wheel --no-index --find-links dist django_activeview")
+    # run("pip install --use-wheel --no-index --find-links dist django_activeview")
+    run("pip install --use-wheel --no-index --find-links=file:./dist django_activeview")
     run("pip uninstall django_activeview --yes")
 
 
