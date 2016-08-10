@@ -53,12 +53,41 @@ Add ``activeview`` to ``INSTALLED_APPS``:
 Usage
 -----
 
-TODO
+Template tag ``isactive`` accepts name of url OR path.
+
+.. code:: html+django
+    {% load activeview %}
+
+    {% isactive "/" %}
+        Root path ("/") is active
+    {% endisactive %}
+
+    Or:
+
+    {% isactive "index" %}
+        Url with name "index" is active
+    {% endisactive %}
+
+
+    Else is supported:
+
+    {% isactive "contact_us" %}
+        Url with name "contact_us" is active.
+
+        {% else %}
+
+        "contact_us" is NOT active
+
+    {% endisactive %}
+
+
+
 
 Inspiration and Credits
 -----------------------
 
 - https://github.com/j4mie/django-activelink
+- http://stackoverflow.com/a/18772289/752142
 
 
 License
