@@ -74,7 +74,7 @@ def is_current(pattern_or_urlname, path, view_args, view_kwargs):
     try:
         pattern = reverse(pattern_or_urlname, args=view_args, kwargs=view_kwargs)
     except NoReverseMatch as e:
-        logger.info("NoReverseMatch {}".format(str(e)))
+        # Given pattern_or_urlname is not urlname
         pattern = pattern_or_urlname
 
     pattern = '^' + pattern + "$"  # Strict checking
