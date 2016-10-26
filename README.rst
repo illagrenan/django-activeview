@@ -43,7 +43,7 @@ Installation
 
 .. code:: shell
 
-    pip install --upgrade git+git://github.com/illagrenan/django-activeview.git#egg=django-activeview
+    pip install --upgrade django-activeview
 
 
 Add ``activeview`` to ``INSTALLED_APPS``:
