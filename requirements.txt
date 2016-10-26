@@ -7,7 +7,7 @@ coveralls
 wheel==0.29.0
 setuptools
 docutils==0.12
-pygments
+pygments==2.1.3
 tox
 flake8
 invoke==0.13.0
