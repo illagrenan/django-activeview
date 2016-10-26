@@ -2,7 +2,7 @@
 -r requirements_test.txt
 
 # Requirements needed for development & build & testing
-coverage
+coverage==4.2
 coveralls
 wheel==0.29.0
 setuptools==28.6.1
