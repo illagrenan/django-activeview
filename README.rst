@@ -18,10 +18,17 @@ Django Active View: *Highlight active items in menu*
         :target: https://coveralls.io/github/illagrenan/django-activeview?branch=master
         :alt: Coverage
 
+.. image:: https://coveralls.io/repos/github/illagrenan/django-activeview/badge.svg?branch=master
+        :target: https://coveralls.io/github/illagrenan/django-activeview?branch=master
+        :alt: Coverage
 
-.. image:: https://requires.io/github/illagrenan/django-activeview/requirements.svg?branch=master
-     :target: https://requires.io/github/illagrenan/django-activeview/requirements/?branch=master
-     :alt: Requirements Status
+.. image:: https://pyup.io/repos/github/illagrenan/django-activeview/shield.svg
+     :target: https://pyup.io/repos/github/illagrenan/django-activeview/
+     :alt: Updates
+
+.. image:: https://pyup.io/repos/github/illagrenan/django-activeview/python-3-shield.svg
+     :target: https://pyup.io/repos/github/illagrenan/django-activeview/
+     :alt: Python 3
 
 Introduction
 ------------
