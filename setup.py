@@ -7,7 +7,7 @@ from setuptools import setup
 
 setup(
     name='django-activeview',
-    version='0.1.0.2',
+    version='0.1.1',
     description="""Django template tag that checks if given view or path is active.""",
     long_description=io.open("README.rst", 'r', encoding="utf-8").read(),
     url='https://github.com/illagrenan/django-activeview',
@@ -34,5 +34,6 @@ setup(
         'Programming Language :: Python :: 3.3',
         'Programming Language :: Python :: 3.4',
         'Programming Language :: Python :: 3.5',
+        'Programming Language :: Python :: 3.6',
     ]
 )
