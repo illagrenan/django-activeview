@@ -4,6 +4,7 @@ python:
   - 2.7
   - 3.4
   - 3.5
+  - 3.6
   - pypy
 env:
   - DJANGO="Django<1.9"   # Django 1.8.x (LTS version)  |   2.7, 3.2 (until the end of 2016), 3.3, 3.4, 3.5

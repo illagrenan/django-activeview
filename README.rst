@@ -2,12 +2,12 @@
 Django Active View: *Highlight active items in menu*
 ====================================================
 
-.. image:: https://badge.fury.io/py/django_activeview.svg
-        :target: https://pypi.python.org/pypi/django_activeview
+.. image:: https://badge.fury.io/py/django-activeview.svg
+        :target: https://pypi.python.org/pypi/django-activeview
         :alt: PyPi
 
 .. image:: https://img.shields.io/badge/license-MIT-blue.svg
-        :target: https://pypi.python.org/pypi/django_activeview/
+        :target: https://pypi.python.org/pypi/django-activeview/
         :alt: MIT
 
 .. image:: https://api.travis-ci.org/illagrenan/django-activeview.svg
@@ -38,7 +38,7 @@ Django template tag that checks if given view or path is active.
 Installation
 ------------
 
-- Supported Python versions are: ``2.7``, ``3.4``, ``3.5`` and ``pypy``.
+- Supported Python versions are: ``2.7``, ``3.4``, ``3.5``, ``3.6`` and ``pypy``.
 - Supported Django versions are: ``1.8.x``, ``1.9.x`` and ``1.10.x``.
 
 .. code:: shell
