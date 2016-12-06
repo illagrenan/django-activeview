@@ -19,6 +19,8 @@ setup(
     include_package_data=True,
     zip_safe=True,
     classifiers=[
+        'Programming Language :: Python :: Implementation :: CPython',
+        'Programming Language :: Python :: Implementation :: PyPy',
         'Development Status :: 3 - Alpha',
         'Framework :: Django',
         'Framework :: Django :: 1.8',
