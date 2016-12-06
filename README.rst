@@ -2,29 +2,33 @@
 Django Active View: *Highlight active items in menu*
 ====================================================
 
-.. image:: https://badge.fury.io/py/django-activeview.svg
-        :target: https://pypi.python.org/pypi/django-activeview
-        :alt: PyPi
+.. image:: https://img.shields.io/pypi/v/django-activeview.svg
+    :target: https://pypi.python.org/pypi/django-activeview
+    :alt: PyPi
 
 .. image:: https://img.shields.io/badge/license-MIT-blue.svg
-        :target: https://pypi.python.org/pypi/django-activeview/
-        :alt: MIT
+    :target: https://pypi.python.org/pypi/django-activeview/
+    :alt: MIT
 
-.. image:: https://api.travis-ci.org/illagrenan/django-activeview.svg
-        :target: https://travis-ci.org/illagrenan/django-activeview
-        :alt: TravisCI
+.. image:: https://img.shields.io/travis/illagrenan/django-activeview.svg
+    :target: https://travis-ci.org/illagrenan/django-activeview
+    :alt: TravisCI
 
-.. image:: https://coveralls.io/repos/github/illagrenan/django-activeview/badge.svg?branch=master
-        :target: https://coveralls.io/github/illagrenan/django-activeview?branch=master
-        :alt: Coverage
+.. image:: https://img.shields.io/coveralls/illagrenan/django-activeview.svg
+    :target: https://coveralls.io/github/illagrenan/django-activeview?branch=master
+    :alt: Coverage
 
 .. image:: https://pyup.io/repos/github/illagrenan/django-activeview/shield.svg
-     :target: https://pyup.io/repos/github/illagrenan/django-activeview/
-     :alt: Updates
+    :target: https://pyup.io/repos/github/illagrenan/django-activeview/
+    :alt: Updates
 
-.. image:: https://pyup.io/repos/github/illagrenan/django-activeview/python-3-shield.svg
-     :target: https://pyup.io/repos/github/illagrenan/django-activeview/
-     :alt: Python 3
+.. image:: https://img.shields.io/pypi/implementation/django-activeview.svg
+    :target: https://pypi.python.org/pypi/django_brotli/
+    :alt: Supported Python implementations
+
+.. image:: https://img.shields.io/pypi/pyversions/django-activeview.svg
+    :target: https://pypi.python.org/pypi/django_brotli/
+    :alt: Supported Python versions
 
 Introduction
 ------------
