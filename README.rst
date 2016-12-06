@@ -38,7 +38,7 @@ Django template tag that checks if given view or path is active.
 Installation
 ------------
 
-- Supported Python versions are: ``2.7``, ``3.4``, ``3.5``, ``3.6`` and ``pypy``.
+- Supported Python versions are: ``2.7``, ``3.4``, ``3.5``, and ``pypy``.
 - Supported Django versions are: ``1.8.x``, ``1.9.x`` and ``1.10.x``.
 
 .. code:: shell
