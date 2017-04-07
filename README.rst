@@ -39,7 +39,7 @@ Installation
 ------------
 
 - Supported Python versions are: ``2.7``, ``3.4``, ``3.5``, ``3.6`` and ``pypy``.
-- Supported Django versions are: ``1.8.x``, ``1.9.x``, ``1.10.x`` and `1.11.x`.
+- Supported Django versions are: ``1.8.x``, ``1.9.x``, ``1.10.x`` and ``1.11.x``.
 
 .. code:: shell
 
