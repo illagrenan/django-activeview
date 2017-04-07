@@ -38,8 +38,8 @@ Django template tag that checks if given view or path is active.
 Installation
 ------------
 
-- Supported Python versions are: ``2.7``, ``3.4``, ``3.5``, and ``pypy``.
-- Supported Django versions are: ``1.8.x``, ``1.9.x`` and ``1.10.x``.
+- Supported Python versions are: ``2.7``, ``3.4``, ``3.5``, ``3.6`` and ``pypy``.
+- Supported Django versions are: ``1.8.x``, ``1.9.x``, ``1.10.x`` and `1.11.x`.
 
 .. code:: shell
 
@@ -98,7 +98,7 @@ License
 
 The MIT License (MIT)
 
-Copyright (c) 2016 Vašek Dohnal (@illagrenan)
+Copyright (c) 2016–2017 Vašek Dohnal (@illagrenan)
 
 Permission is hereby granted, free of charge, to any person obtaining a
 copy of this software and associated documentation files (the
