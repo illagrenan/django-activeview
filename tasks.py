@@ -1,17 +1,19 @@
 # -*- encoding: utf-8 -*-
-# ! python2
+# ! python3
 
-from __future__ import (absolute_import, division, print_function, unicode_literals)
-
+import os
 import shutil
+import webbrowser
 
 from invoke import run, task
+
+PROJECT_NAME = 'django_activeview'
 
 
 @task
 def clean():
     """remove build artifacts"""
-    shutil.rmtree('django_activeview.egg-info', ignore_errors=True)
+    shutil.rmtree('{PROJECT_NAME}.egg-info'.format(PROJECT_NAME=PROJECT_NAME), ignore_errors=True)
     shutil.rmtree('build', ignore_errors=True)
     shutil.rmtree('dist', ignore_errors=True)
     shutil.rmtree('htmlcov', ignore_errors=True)
@@ -21,12 +23,11 @@ def clean():
 @task
 def lint():
     """check style with flake8"""
-    run("flake8 activeview test_project/tests")
+    run("flake8 {PROJECT_NAME}/ tests/".format(PROJECT_NAME=PROJECT_NAME))
 
 
 @task
 def test():
-    """run tests quickly with the default Python"""
     run("python test_project/manage.py test")
 
 
@@ -38,25 +39,26 @@ def test_all():
 
 @task
 def check():
-    """run tests quickly with the default Python"""
+    """Check setup"""
     run("python setup.py --no-user-cfg --verbose check --metadata --restructuredtext --strict")
 
 
 @task
 def coverage():
     """check code coverage quickly with the default Python"""
-    run("coverage run --source activeview/templatetags test_project/manage.py test")
+    run("coverage run --source {PROJECT_NAME} -m py.test".format(PROJECT_NAME=PROJECT_NAME))
     run("coverage report -m")
     run("coverage html")
+
+    webbrowser.open('file://' + os.path.realpath("htmlcov/index.html"), new=2)
 
 
 @task
 def test_install():
     """try to install built package"""
-    run("pip uninstall django_activeview --yes", warn=True)
-    # run("pip install --use-wheel --no-index --find-links dist django_activeview")
-    run("pip install --use-wheel --no-index --find-links=file:./dist django_activeview")
-    run("pip uninstall django_activeview --yes")
+    run("pip uninstall {PROJECT_NAME} --yes".format(PROJECT_NAME=PROJECT_NAME), warn=True)
+    run("pip install --use-wheel --no-cache-dir --no-index --find-links=file:./dist {PROJECT_NAME}".format(PROJECT_NAME=PROJECT_NAME))
+    run("pip uninstall {PROJECT_NAME} --yes".format(PROJECT_NAME=PROJECT_NAME))
 
 
 @task
@@ -71,7 +73,7 @@ def build():
 def publish():
     """publish package"""
     check()
-    run('python setup.py sdist upload -r pypi')
+    run('python setup.py sdist upload -r pypi')  # Use python setup.py REGISTER
     run('python setup.py bdist_wheel upload -r pypi')
 
 
@@ -79,5 +81,5 @@ def publish():
 def publish_test():
     """publish package"""
     check()
-    run('python setup.py sdist upload -r https://testpypi.python.org/pypi')
+    run('python setup.py sdist upload -r https://testpypi.python.org/pypi')  # Use python setup.py REGISTER
     run('python setup.py bdist_wheel upload -r https://testpypi.python.org/pypi')
