@@ -46,7 +46,7 @@ def check():
 @task
 def coverage():
     """check code coverage quickly with the default Python"""
-    run("coverage run --source {PROJECT_NAME} -m py.test".format(PROJECT_NAME=PROJECT_NAME))
+    run("coverage run --source activeview/templatetags test_project/manage.py test")
     run("coverage report -m")
     run("coverage html")
 
